@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Mohammed Sameer <msameer@foolab.org>
 Build-Depends: debhelper (>= 9),
                cmake,
-               libboost-dev
+               libboost-dev,
+               libboost-system-dev
 Standards-Version: 3.9.6
 
 Package: whynot
