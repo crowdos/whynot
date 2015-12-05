@@ -5,5 +5,5 @@ find_package(Boost REQUIRED system)
 
 include_directories(${Boost_INCLUDE_DIRS})
 add_executable(whynot main.cpp)
-target_link_libraries(whynot ${Boost_LIBRARIES} dl)
+target_link_libraries(whynot ${Boost_LIBRARIES} dl pthread)
 install(TARGETS whynot DESTINATION /usr/bin)
