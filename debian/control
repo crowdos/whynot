@@ -1,0 +1,24 @@
+Source: whynot
+Section: misc
+Priority: optional
+Maintainer: Mohammed Sameer <msameer@foolab.org>
+Build-Depends: debhelper (>= 9),
+               cmake,
+               libboost-dev
+Standards-Version: 3.9.6
+
+Package: whynot
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: A daemon and a collection of generic plugins
+ This package contains whynot, a daemon handling basic and misc.
+ system bits
+
+Package: whynot-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: whynot (= ${binary:Version}), ${misc:Depends}
+Description: Whynot debugging symbols
+ This package contains the debugging symbols for Whynot
