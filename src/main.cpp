@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
     }
 
     Plugin *p = init_func();
-    if (!p->start()) {
+    if (!p->start(io_service)) {
       delete p;
       dlclose(handle);
       continue;
